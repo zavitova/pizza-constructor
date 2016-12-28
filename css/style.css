@@ -139,6 +139,70 @@ header .order:hover {
 .pizzaBuild .box{
     overflow:hidden;
 }
+/* Сделай сам
+----------------------------------------------------------------*/
+.box-base h1{
+    font-family: "Arial-Narrow";
+    font-size: 44px;
+    line-height: normal;
+    margin: 38px 0;
+    color:#000;
+}
+.item-params-side {
+    font-size: 16px;
+    line-height: normal;
+    color: #5e5e5e;
+}
+.item-title {
+    font-family: "Arial-Narrow";
+    font-size: 44px;
+    line-height: normal;
+    margin: 38px 0;
+}
+.hide {
+    display: none;
+}
+.item-btns-cake label{
+    float: left;
+    margin-right: 20px;
+}
+.label-large {
+    background: url(../images/pizza-size-large.png) no-repeat 50% 0;
+    width: 60px;
+    height: 65px;
+}
+.item-radio-large:checked~.label-large {
+    background-position: 50% -65px;
+}
+.item-radio-mid:checked~.label-mid {
+    background-position: 50% -56px;
+}
+.label-mid {
+    background: url(../images/pizza-size-mid.png) no-repeat 50% 0;
+    width: 52px;
+    height: 56px;
+}
+.label-small {
+    background: url(../images/pizza-size-small.png) no-repeat 50% 0;
+    width: 44px;
+    height: 47px;
+}
+.item-radio-small:checked~.label-small {
+    background-position: 50% -47px;
+}
+/*Пицца сделай сам левая колонка
+--------------------------------------------------------------*/
+.cnstr-photo {
+    position: relative;
+}
+.cnstr-item-photo {
+    width: 80%;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+/*
+---------------------------------------------------------------*/
 .label-americano, .label-italano, .label-hotdog{
     width: 70px;
     height: 52px;
@@ -146,7 +210,16 @@ header .order:hover {
     opacity: 0.5;
     cursor: pointer;
 }
-.label-americano:hover, .label-italano:hover, .label-hotdog:hover{
+.item-radio-americano:checked~.label-americano {
+    opacity: 1;
+}
+.item-radio-italano:checked~.label-italano {
+    opacity: 1;
+}
+.item-radio-hotdog:checked~.label-hotdog {
+    opacity: 1;
+}
+.item-radio-souch-type1:checked~.label-souch-type1, .item-radio-souch-type2:checked~.label-souch-type2, .item-radio-souch-type3:checked~.label-souch-type3, .item-radio-souch-type4:checked~.label-souch-type4 {
     opacity: 1;
 }
 .label-americano {
@@ -157,9 +230,6 @@ header .order:hover {
 }
 .label-hotdog {
     background: url(../images/hotdog.png) no-repeat 0 0;
-}
-.label-souch-type1, .label-souch-type2, .label-souch-type3, .label-souch-type4{
-
 }
 .label-souch-type1 {
     background: url(/images/garlik.png) no-repeat 50% 0;
@@ -216,6 +286,7 @@ header .order:hover {
     display: inline-block;
     border-radius: 50%;
 }
+
 .addit-type3 {
     background: url(../images/addit-types.png) no-repeat -100px 0;
 }
@@ -266,6 +337,19 @@ header .order:hover {
 .addit-item {
     font-size: 13px;
     color: #000;
+}
+/*-------------------------------
+Ваша пицца состоит из ----------------------------------------------------*/
+.composition-img {
+    cursor: pointer;
+}
+.sauce-base-select {
+    width: 85px;
+    font-size: 15px;
+    font-style: italic;
+}
+.grid_composition [class^=grid-cl] {
+    text-align: center;
 }
 /*---------------------------------------------------------------------------------*/
 .item-bottom-side {
@@ -390,4 +474,9 @@ a.footer_logo {
 }
 .social, .pizza_ps{
     opacity: 0.3;
+}
+/* заказ и кнопка Корзина
+---------------------------------------------------------*/
+.item-order {
+    color:#000;
 }
